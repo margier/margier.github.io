@@ -1,105 +1,281 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Margie's Portfolio</title>
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.cs>
-    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Margie's Portfolio</title>
+        <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    </head>
 <body>
-      <header>
-        <div class="wrapper">
-          <h1>Margie Reynolds<span class="color"></span></h1>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Hobbies</a></li>
-              <li><a href="#">Contact</a></li>
-
-            </ul>
-          </nav>
-        </div>
+        <header>
+            <h1>Margie Reynolds</h1>
+              <nav>
+                <ul>
+                  <li><a href="#index" class="slide-section">Home</a></li>
+                  <li><a href="#about" class="slide-section">About</a></li>
+                  <li><a href="#work" class="slide-section">Work</a></li>
+                  <li><a href="#hobbies" class="slide-section">Hobbies</a></li>
+                  <li><a href="#contact" class="slide-section">Contact</a></li>
+                </ul>
+              </nav>
       </header>
-
       <div id="hero-image">
         <div class="wrapper">
-          <h2><strong>A Minimal, clean</strong><br/>
-          layout for web design.</h2>
-          <a href="#" class="button-1">Get Started</a>
+          <div class="box">
+                <h2><strong>Welcome to my site!</strong></h2>
+                <p class="center">This website will show my current and
+                past work. In this site, I show work from the applications<br>
+                I built while in school at General Assembly as well as my
+                past work with wireframing, <br>building websites, and my hobbies,
+                of photography and videography.</p>
+                <p class="center">Thanks for visiting.</p>
+
+          </div>
         </div>
       </div>
+      <div class="secondary-content">
 
-      <div id="features">
+          <div class="wrapper gray">
+
+              <h2>About Me</h2>
+              <p class="compact">I have always tried leaning toward the side of optimism
+              with everything life throw's my way. Yes, sometimes challenges
+              make that hard, but I truly believe things happen for a reason.
+              can't explain it, but it's true.</p>
+
+              <p class="compact">I live by having the philosophy of never taking anything for granted.
+              I want to pay my knowledge forward (all things technical) to anyone who'd
+              like to learn.</p>
+
+              <p class="compact">When I take on a project for someone, whether it be to design a website,
+              build a form, or something else, I try to ensure that the finished project
+              is exactly what the customer wanted providing functionality, usability, and
+              being pleasing to the eye. When building a site, my goal is to build a site
+              where anyone from any level of expertise will find things fast and easily. I
+              am an extremely organized person and I work hard at trying to make life
+              easier for my clients and their target market.</p>
+
+              <p class="compact">I have always believed that 'Everything you do has a consequence on the
+              future' so make sure you try your hardest the first time to do the best job
+              ossible because you may not have another chance. I try to do that for all
+              my customers.</p>
+
+            </div>
+
+      </div>
+
+      <div id="portfolio">
+
         <div class="wrapper">
+          <h2>Portfolio Work</h2>
+
           <ul>
-            <li class="feature-1">
-              <h4>Easy to Edit</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            <li class="article-left lighter">
+              <h4>Applications</h4>
+              <p>Work here from the applications created through GA. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
+              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
             </li>
-            <li class="feature-2">
-              <h4>Layered PSD</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            <li class="article-right darker">
+              <h4 class="light_title">City of LA Mobile Phone<br>App Wireframes</h4>
+              <p>Phone app here Etiam mollis turpis ac libero interdum, id
+              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
             </li>
-            <li class="feature-3">
-              <h4>Ready to Go</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            <li class="article-left clear darker">
+              <h4 class="light_title">eBooks</h4>
+              <p>Disney Books here met, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
             </li>
-            <div class="clear"></div>
+
+            <li class="article-right lighter">
+              <h4>Websites</h4>
+              <p>Joomla websites here. t, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
           </ul>
         </div>
       </div>
 
-        <div id="primary-content">
-          <div class="wrapper">
-            <article>
-              <h3>Featured Content</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada. Integer porta sem nec nibh hendrerit imperdiet. </p>
-              <a href="#"><img src="images/video-placeholder.jpg" alt="video placeholder" /></a>
-            </article>
-          </div>
-      </div>
-      <div id="secondary-content">
+      <div id="portfolio" class="tan">
+
         <div class="wrapper">
-          <article style="background-image: url('images/article-image-1.jpg');">
-            <div class="overlay">
-              <h4>Secondary Content</h4>
-              <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt nam.</small></p>
-              <a href="#" class="more-link">View more</a>
-            </div>
-          </article>
-          <article style="background-image: url('images/article-image-2.jpg');">
-            <div class="overlay">
-              <h4>Secondary Content</h4>
-              <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod leo a nibh dignissim tincidunt nam.</small></p>
-              <a href="#" class="more-link">View more</a>
-            </div>
-          </article><div class="clear"></div>
+          <h2>Applications</h2>
+
+          <ul>
+            <li class="article-left">
+              <h4>The War Game</h4>
+              <p>Work here from the applications created through GA. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
+              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-right">
+              <h4>The Wish List</h4>
+              <p>Phone app here Etiam mollis turpis ac libero interdum, id
+              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-left clear">
+              <h4>App 3</h4>
+              <p>Disney Books here met, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+
+            <li class="article-right">
+              <h4>App 4</h4>
+              <p>Joomla websites here. t, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="cta">
+
+
+      <div id="portfolio">
+
+        <div class="wrapper">
+          <h2>City of Omaha Mobile Inspection App Wireframes</h2>
+
+          <ul>
+            <li class="article-left">
+              <h4>Applications</h4>
+              <p>Work here from the applications created through GA. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
+              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-right">
+              <h4>City of LA Phone App</h4>
+              <p>Phone app here Etiam mollis turpis ac libero interdum, id
+              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-left clear">
+              <h4>eBooks</h4>
+              <p>Disney Books here met, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+
+            <li class="article-right">
+              <h4>Websites</h4>
+              <p>Joomla websites here. t, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <footer>
-        <div class="wrapper">
-          <div id="footer-info">
-            <p>Copyright 2017. All rights reserved.</p>
-          </div>
-          <div id="footer-links">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Hobbies</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-      </footer>
-</body>
 
+      <!--Start of ebook? -->
+      <div id="portfolio" class="darker">
+
+        <div class="wrapper">
+          <h2 class="light_title">eBooks</h2>
+
+          <ul>
+            <li class="article-left">
+              <h4 class="light_title">Book 1</h4>
+              <p>Work here from the applications created through GA. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
+              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-right">
+              <h4 class="light_title">City of LA Phone App</h4>
+              <p>Phone app here Etiam mollis turpis ac libero interdum, id
+              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-left clear">
+              <h4 class="light_title">eBooks</h4>
+              <p>Disney Books here met, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+
+            <li class="article-right">
+              <h4 class="light_title">Websites</h4>
+              <p>Joomla websites here. t, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- end of ebooks -->
+
+      <!-- Websites -->
+      <div id="portfolio" class="gray">
+
+        <div class="wrapper">
+          <h2>Websites</h2>
+
+          <ul>
+            <li class="article-left">
+              <h4>Book 1</h4>
+              <p>Work here from the applications created through GA. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
+              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-right">
+              <h4>City of LA Phone App</h4>
+              <p>Phone app here Etiam mollis turpis ac libero interdum, id
+              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+            </li>
+            <li class="article-left clear">
+              <h4>eBooks</h4>
+              <p>Disney Books here met, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+
+            <li class="article-right">
+              <h4>Websites</h4>
+              <p>Joomla websites here. t, consectetur adipiscing elit. Etiam mollis
+              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
+              mattis nibh at bibendum.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        </div> <!-- end of websites -->
+
+
+
+        <div class="contactPage">
+            <article>
+              <h3 id="contact">Contact</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Donec euismod leo a nibh dignissim tincidunt. Nam ultricies odio ac
+              neque suscipit volutpat. Ut dictum adipiscing felis sed malesuada.
+              Integer porta sem nec nibh hendrerit imperdiet. </p>
+
+            </article>
+          </div>
+
+      <footer>
+
+              <div id="footer-info">
+                <p  class="smallerFont">Copyright 2017. All rights reserved.</p>
+             </div>
+             <div id="footer-links">
+                <ul>
+                  <li><a href="#top" class="slide-section">Home</a><span> | </span></li>
+                  <li><a href="#about" class="slide-section">About</a><span> | </span></li>
+                  <li><a href="#work" class="slide-section">Work</a><span> | </span></li>
+                  <li><a href="#hobbies" class="slide-section">Hobbies</a><span> | </span></li>
+                  <li><a href="#contact" class="slide-section">Contact</a></li>
+                </ul>
+             </div>
+
+      </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+      <script src="js/main.js"></script>
+</body>
 </html>
