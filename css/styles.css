@@ -184,11 +184,18 @@ li.feature-right {
   /*border: 2px solid red;*/
   width: 100%;
   height: inherit;
+  text-align: center;
   padding: 20px 20px 20px 0px;
   margin: 0 auto;
+  display: inline-block;
 }
 
-#portfolio {
+/*#portfolio {
+/*  background-color: #f8fafa;
+  text-align: center;
+  display: inline-block;
+}*/
+.container {
 /*  background-color: #f8fafa;*/
   text-align: center;
   display: inline-block;
@@ -214,6 +221,9 @@ li.feature-right {
 }
 .gray {
   background-color: #ccc;
+}
+.right {
+  float: right;
 }
 
 #contactPage {
