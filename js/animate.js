@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   var headerHeight = $('header').outerHeight();
-  console.log(headerHeight);
+  // console.log(headerHeight);
 
 
   $('.slide-section').on('click',function(e) {
@@ -13,17 +13,10 @@ $(document).ready(function() {
         scrollTop: $(linkHref).offset().top - headerHeight
     }, 1000);
     e.preventDefault();
-    console.log(linkHref);
+    // console.log(linkHref);
 });
+
+
+
+
 });
-    //==========================
-    // target the hash -- this worked
-    //var target = this.hash;
-    //console.log($(linkHref).offset().top);
-    //var $target = $(target);
-    //     $('html, body').animate({
-    //     'scrollTop': $target.offset().top - headerHeight
-    // }, 1000, 'swing', function() {
-    //   window.location.hash = linkHref;
-    // });
-  //===========================
