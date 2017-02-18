@@ -14,6 +14,10 @@ p{
 p.compact {
   margin: 20px 60px 20px 60px;
 }
+p.compactCenter {
+  margin: 20px 60px 20px 60px;
+  text-align: center;
+}
 h1 {
   font-size: 55px;
   font-weight: bold;
@@ -392,7 +396,10 @@ footer nav ul li a {
   text-align: left;
   cursor:pointer;
 }
-
+.pic {
+  width: 200px;
+  height: inherit;
+}
 .picbig {
   position:absolute;
   padding: 5px;
@@ -402,10 +409,34 @@ footer nav ul li a {
   z-index: 10;
 }
 .pic:hover + .picbig {
-  width: 500px;
+  width: 400px;
+}
+.contact {
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: block;
+  width: 60%;
+  height: inherit;
+  vertical-align: middle;
+  margin-left: 140px;
+  padding: 40px;
+  line-height: 30px;
+  background-color: #ccc;
+}
+.textarea{
+  height: 5em;
+  width: 40%;
 }
 
-
+.deep {
+  height: 50px;
+}
+.mailText {
+    font-size:25px;
+    color: #000;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
  /* Small screen */
  @media screen and (min-width: 150px) and (max-width: 500px){
    body {
