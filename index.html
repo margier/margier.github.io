@@ -4,29 +4,34 @@
         <meta charset="utf-8">
         <title>Margie's Portfolio</title>
         <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+        <meta name="description" content="Online Resume of Margie Reynolds" />
+        <meta name="keywords" content="Margie reynolds, Margaret Reynolds, Web Design, Web Developer, Graphic Design" />
+   	    <meta name="author" content="Margie Reynolds" />
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css/css/master.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<!-- slicebox -->
+        <link rel="icon" href="/images/favicon.ico">
+        <!-- slicebox -->
       <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
       <link rel="stylesheet" type="text/css" href="css/custom.css" />
-<!-- end slicebox -->
+        <!-- end slicebox -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
     </head>
 <body>
         <header>
             <h1>Margie Reynolds</h1>
               <nav>
                 <ul>
-                  <li><a href="#" class="slide-section">Home</a></li>
+                  <li><a href="#top" class="slide-section">Home</a></li>
                   <li><a href="#about" class="slide-section">About</a></li>
                   <li><a href="#work" class="slide-section">Work</a></li>
-                  <li><a href="#hobbies" class="slide-section">Hobbies</a></li>
+                  <li><a href="#connect" class="slide-section">Connect</a></li>
                   <li><a href="#contact" class="slide-section">Contact</a></li>
                 </ul>
               </nav>
       </header>
+      <div id="top"></div>
       <div id="hero-image">
         <div class="wrapper">
           <div class="box">
@@ -34,8 +39,8 @@
                 <p>This website will show my current and
                 past work. I show work from the applications I built using
                 JavaScript and various libraries such as node.js, jQuery,
-                and React.js as well as my past work with wireframing, building
-                websites, and my hobbies, of photography and videography.</p>
+                and React.js as well as my past work with wireframing, and building
+                websites.</p>
 
                 <p>Thanks for visiting.</p>
 
@@ -53,15 +58,15 @@
                 learning MEAN stack development. Some of the skills learned included
                 Node.js, MongoDB, Mongoose, Express, React, and ES6. I also learned
                 the ReST (Representational State Transfer) architectural style used to
-                build applications. For a full list of technologies learned, please
+                build applications. For a full list of technologies learned, please visit my
                  <a href="https://www.linkedin.com/in/margie-reynolds-6787052" target="_blank"
-                 class="hypeColorOrange">visit my LinkedIn profile</a>.</p>
+                 class="hypeColorOrange">LinkedIn profile</a>.</p>
                </p>
               <p class="compact">This helped prepare me for my next step in my career of
                 working in these areas.</p>
 
               <p class="compact">When I take on a project for someone, whether it entails
-                designing a website, build a form, or something else, I try to ensure that
+                designing a website, building a form, or something else, I try to ensure that
                 the finished project is exactly what the customer wanted providing functionality,
                 usability, and being pleasing to the eye.</p>
 
@@ -76,10 +81,10 @@
 
           <ul>
             <li class="article-left lighter">
+            <a href="#applications" class="slide-section">
               <h4>Applications</h4>
-              <p>Work here from the applications created. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
-              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+              <p>This area will show the applications I've built using technologies
+              such as Node.js, Express, React, and other javascript libraries.</p></a>
             </li>
             <li class="article-right darker">
               <a href="#wireframes" class="slide-section hypeColorWhite">
@@ -113,30 +118,27 @@
 
           <ul>
             <li class="article-left">
-              <h4>The War Game</h4>
-              <p>Work here from the applications created through GA. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
-              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <li class="article-right">
-              <h4>The Wish List</h4>
-              <p>Phone app here Etiam mollis turpis ac libero interdum, id
-              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
-            </li>
-            <li class="article-left clear">
-              <h4>App 3</h4>
-              <p>Disney Books here met, consectetur adipiscing elit. Etiam mollis
-              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
-              mattis nibh at bibendum.</p>
+              <h4>The Paddle Game</h4>
+              <p>This application is a simple paddle game created using javascript and html5. One or
+                two players can play. The first person to five wins the game.</p>
+
+              <p><a href="https://margier.github.io/paddlegame/" class="hypeColorOrange" target="_blank">View the application</a></p>
+
+                </p>
             </li>
 
+          <ul>
             <li class="article-right">
-              <h4>App 4</h4>
-              <p>Joomla websites here. t, consectetur adipiscing elit. Etiam mollis
-              turpis ac libero interdum, id fringilla purus feugiat. Etiam malesuada
-              mattis nibh at bibendum.</p>
+              <h4>The Wish List</h4>
+              <p>This is my first application. The purpose of it is to have
+                all future items someone wants to purchase in one location. This was coded during a one-week
+                sprint while attending a coding bootcamp.</p>
+
+              <p><a href="https://limitless-tor-47122.herokuapp.com/" class="hypeColorOrange" target="_blank">View the application</a></p>
+
+                </p>
             </li>
-          </ul>
+
         </div>
 <!--       </div> -->
 
@@ -325,63 +327,69 @@
 <!-- end slicebox -->
 
 <!-- start of hobbies -->
-<div class="container tan" id="hobbies">
+<div class="wrapper tan" id="connect">
  <!-- id="portfolio" -->
-        <div class="wrapper">
-          <h2>Hobbies</h2>
+
+          <h2>Connect</h2>
 
           <ul>
             <li class="article-left">
-              <h4>Photography</h4>
-              <p>Work here from the applications created through GA. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis turpis ac
-              libero interdum, id fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+              <h4>LinkedIn <img src="../images/linkedin.png" alt="LinkedIn logo" title="LinkedIn logo" width="30px"/></h4>
+              <p>Visit my <a href="https://www.linkedin.com/in/margie-reynolds-6787052/"  class="hypeColorOrange" target="_blank">
+                LinkedIn profile</a> to learn more about my experience.</p>
             </li>
             <li class="article-right">
-              <h4>Videos</h4>
-              <p>Phone app here Etiam mollis turpis ac libero interdum, id
-              fringilla purus feugiat. Etiam malesuada mattis nibh at bibendum.</p>
+              <h4>Twitter <img src="../images/twitter.jpg" alt="Twitter logo" title="Twitter logo" width="30px"/></h4>
+              <p>Visit my <a href="https://twitter.com/just4mah" class="hypeColorOrange" target="_blank">Twitter page</a>
+                and follow me if you'd like.</p>
             </li>
 
-        </div>
 </div>
 
 <!-- end of hobbies -->
-  <div class="wrapper darker">
-        <div class="contactPage" id="contact">
+  <div class="wrapper darker" id="contact">
+        <div class="contactPage">
 
               <h3>Get in touch</h3>
-              <p class="compactCenter">Please send me a message below if you'd like
-                get in contact with me.</p>
+              <section>
+                <form class="contact" action="mailto:margie.a.reynolds@gmail.com" method="post">
+                <p class="compactCenter darkFont">Please send me a message if you'd like
+                    get in contact.</p>
+                <button class="button" type="submit">Email me</button>
 
-              <form id="contactForm" class="contact" action="/sendForm" method="post">
+                <!-- <div class="row">
+                  <label class="mailText name_validate">Enter your name: </label>
+                  <input type="text" size="40%"><br />
+                </div>
+                <div class="row">
+                  <label class="mailText">Enter your email: </label>
+                  <input type="email" size="40%"><br />
+                </div>
 
-                <label class="mailText">Enter name: </label>
-                <input class="long" type="text" required="true"><br /><br />
+                <div class="row">
+                  <label class="mailText">Enter Subject: </label>
+                  <input type="text" size="40%"><br />
+                </div>
+                <div class="row">
+                  <label class="mailText textarea">Enter Message: </label>
+                  <textarea id="message" name="message" rows="7" cols="50"></textarea><br />
+                </div> -->
 
-                <label class="mailText">Enter Subject: </label>
-                <input type="text" class="long" required="true"><br /><br />
 
-                <label class="mailText textarea">Enter Message: </label>
-                <input type="text" class="long textarea" required="true"><br /><br />
+                </form>
 
-                <label class="mailText">Enter email: </label>
-                <input type="email" class="long" required="true"><br /><br />
-
-                <button type="submit" name="button">Submit</button>
-
-              </form>
+             </section>
 
         </div>
   </div>
   <footer>
 
         <div id="footer-info">
-          <p  class="smallerFont">Copyright 2017. All rights reserved.</p>
+          <p  class="smallerFont">&#9400 All rights reserved.</p>
        </div>
        <div id="footer-links">
           <ul>
-            <li><a href="#index" class="slide-section">Home</a><span> | </span></li>
+            <li><a href="#top" class="slide-section">Home</a><span> | </span></li>
             <li><a href="#about" class="slide-section">About</a><span> | </span></li>
             <li><a href="#work" class="slide-section">Work</a><span> | </span></li>
             <li><a href="#hobbies" class="slide-section">Hobbies</a><span> | </span></li>
@@ -391,8 +399,10 @@
 
   </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-      <script src="js/animate.js"></script>
-      <script src="/js/jquery.js"></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/animate.js"></script>
+      <script type="text/javascript" src="/js/jquery.js"></script>
+
     <!-- slicebox -->
       <script type="text/javascript" src="js_old/arrows.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
