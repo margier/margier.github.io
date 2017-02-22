@@ -178,6 +178,7 @@ li.feature-right {
   padding: 0px 20px 0px 20px;
   list-style: none;
   float:right;
+  clear:both;
 }
 .lighter {
   background-color: #e8e8e8;
@@ -245,6 +246,22 @@ li.feature-right {
 .col-3 {
   width: 30%;
   padding: 20px 10px 10px 10px;
+  margin: 0 auto;
+  border-radius: 5px;
+  list-style: none;
+  float: right;
+}
+.leftside {
+  width: 30%;
+  padding: 20px 0px 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  list-style: none;
+  float: left;
+}
+.rightside {
+  width: 60%;
+  padding: 20px 0px 10px 0px;
   margin: 0 auto;
   border-radius: 5px;
   list-style: none;
