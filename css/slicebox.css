@@ -98,10 +98,158 @@
 
  /* Small screen */
  /* this is so text on websits page is smaller under photos*/
-@media screen and (min-width: 150px) and (max-width: 500px){
+@media screen and (min-width: 300px) and (max-width: 667px){
 
-.sb-description h3 {
-	font-size:  8px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	.sb-slider {
+		margin: 0px auto;
+		position: relative;
+		overflow: hidden;
+		width: 200px;
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.sb-slider li {
+		margin: 0;
+		padding: 0;
+		display: none;
+	}
+	.sb-slider li > a {
+	 outline: none;
+	}
+
+	.sb-slider li > a img {
+	 border: none;
+	}
+
+	/*.sb-slider img {
+	 margin-left:20px;
+	 max-width: 100%;
+	 display: block;
+	}*/
+	.sb-slider img {
+	    max-width: 200px;
+	    margin: 0 auto;
+	    display: block;
+	}
+	.sb-description {
+	 padding: 2%;
+	 margin: 0 auto;
+	 width: 80%;
+	 bottom: 2%;
+	 left: 2px;
+	 right: 2px;
+	 z-index: 1000;
+	 position: absolute;
+	 background: #353e71;
+	 background: rgba(190,176,155, 0.4);
+	 border: 1px solid rgba(255,255,255,0.7);
+	 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	 filter: alpha(opacity=0);
+	 opacity: 0;
+	 color: #000;
+
+	 -webkit-transition: all 200ms;
+	 -moz-transition: all 200ms;
+	 -o-transition: all 200ms;
+	 -ms-transition: all 200ms;
+	 transition: all 200ms;
+	}
+	.sb-slider li.sb-current .sb-description h3 {
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		filter: alpha(opacity=80);
+		width: 90%;
+		height: 1%;
+		opacity: 1;
+		height: 1%;
+		font-size: 10px;
+	}
+	.sb-slider li.sb-current .sb-description:hover {
+		width:90%;
+	 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+	 filter: alpha(opacity=99);
+	 background: rgba(190,176,155, 0.7);
+	}
+	h1, .h1, h2, .h2, h3, .h3 {
+	    margin-top: 2%;
+	    margin-bottom: 2%;
+	}
+
+	.sb-description h3 {
+		font-size:  9px;
+	}
 }
-}
+
+/* Medium screen */
+/* says if screen width is 501 px to 800 px, it's going to be activated by the browser - less than 501 is for smaller than ipad, larger than 800 is for laptops, desktops */
+@media screen and (min-width: 501px) and (max-width: 800px)
+ {
+	 .sb-slider {
+ 		margin: 10px auto;
+ 		position: relative;
+ 		overflow: hidden;
+ 		width: 80%;
+ 		list-style-type: none;
+ 		padding: 0;
+ 	}
+	 .sb-slider li {
+	 	margin: 0;
+	 	padding: 0;
+	 	display: none;
+	 }
+
+	 .sb-slider li > a {
+	 	outline: none;
+	 }
+
+	 .sb-slider li > a img {
+	 	border: none;
+	 }
+
+	 .sb-slider img {
+	 	max-width: 100%;
+	 	display: block;
+	 }
+	 .sb-description {
+	 	padding: 2px;
+	 	bottom: 5px;
+	 	left: 2px;
+	 	right: 2px;
+	 	z-index: 1000;
+	 	position: absolute;
+	 	background: #353e71;
+	 	background: rgba(190,176,155, 0.4);
+	 	border: 1px solid rgba(255,255,255,0.7);
+	 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	 	filter: alpha(opacity=0);
+	 	opacity: 0;
+	 	color: #000;
+
+	 	-webkit-transition: all 200ms;
+	 	-moz-transition: all 200ms;
+	 	-o-transition: all 200ms;
+	 	-ms-transition: all 200ms;
+	 	transition: all 200ms;
+	 }
+	 .sb-slider li.sb-current .sb-description {
+		 width:100%;
+	 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	 	filter: alpha(opacity=80);
+	 	opacity: 1;
+	 }
+
+	 .sb-slider li.sb-current .sb-description:hover {
+		 width:100%;
+	 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+	 	filter: alpha(opacity=99);
+	 	background: rgba(190,176,155, 0.7);
+	 }
+	 h1, .h1, h2, .h2, h3, .h3 {
+	     margin-top: 2px;
+	     margin-bottom: 2px;
+	 }
+
+
+
+
+ }

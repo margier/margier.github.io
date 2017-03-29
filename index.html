@@ -1,57 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" contents="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale-1">
         <title>Margie's Portfolio</title>
-        <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
         <meta name="description" content="Online Resume of Margie Reynolds" />
-        <meta name="keywords" content="Margie reynolds, Margaret Reynolds, Web Design, Web Developer, Graphic Design" />
+        <meta name="keywords" content="Margaret Reynolds, Web Design, Web Developer, Graphic Design" />
    	    <meta name="author" content="Margie Reynolds" />
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link rel="icon" href="/images/favicon.ico">
         <!-- slicebox -->
-      <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
-      <link rel="stylesheet" type="text/css" href="css/custom.css" />
-        <!-- end slicebox -->
+        <link rel="stylesheet" type="text/css" href="css/slicebox.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <!-- end slicebox -->
     </head>
 <body>
-        <header>
-            <h1>Margie Reynolds</h1>
-              <nav>
-                <ul>
-                  <li><a href="#top" class="slide-section">Home</a></li>
-                  <li><a href="#about" class="slide-section">About</a></li>
-                  <li><a href="#work" class="slide-section">Work</a></li>
-                  <li><a href="#connect" class="slide-section">Connect</a></li>
-                  <li><a href="#contact" class="slide-section">Contact</a></li>
-                </ul>
-              </nav>
-      </header>
-      <div id="top"></div>
-      <div id="hero-image">
-        <div class="wrapper">
-          <div class="box">
-                <h2><strong>Welcome to my site!</strong></h2>
-                <p>This website will show my current and
-                past work. I show work from the applications I built using
-                JavaScript and various libraries such as node.js, jQuery,
-                and React.js as well as my past work with wireframing, and building
-                websites.</p>
+  <div id="top"></div>
 
-                <p>Thanks for visiting.</p>
-
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+          <div class="navbar-header">
+          <!-- This makes hamburger menu -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          <!-- end hamburger menu-->
+            <a href="#top" class="slide-section navbar-brand">Margie Reynolds</a>
           </div>
-        </div>
+      <div class=" collapse navbar-collapse" id="navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#top" class="slide-section">Home</a></li>
+              <li><a href="#about" class="slide-section">About</a></li>
+              <li><a href="#work" class="slide-section">Work</a></li>
+              <li><a href="#connect" class="slide-section">Connect</a></li>
+              <li><a href="#contact" class="slide-section">Contact</a></li>
+            </ul>
       </div>
-      <div class="secondary-content" id="about">
+    </div>
+  </nav>
 
-          <div class="wrapper gray">
+  <!-- <div class="jumbotron" id="top"> -->
+  <div class="container-fluid" id="hero-image">
+      <div class="box">
+        <h2 class="centerMe"><strong>Welcome to my site!</strong></h2>
+        <p class="centerMe">This website will show my current and
+        past work. I show work from the applications I built using
+        JavaScript and various libraries such as node.js, jQuery,
+        and React.js as well as my past work with wireframing, and building
+        websites.</p>
 
-              <h2>About Me</h2>
-              <p class="compact">I've worked on projects in my career from building a simple
+        <p class="centerMe">Thanks for visiting.</p>
+      </div>
+  </div>
+  <div class="container-fluid gray" id="about">
+
+        <div class="container">
+              <h2 class="centerMe">About Me</h2>
+              <p>I've worked on projects in my career from building a simple
                 website to working on a team for a large company converting intranet sites to
                 a new platform entirely. I recently attended a bootcamp to enhance my skills
                 learning MEAN stack development. Some of the skills learned included
@@ -61,155 +75,161 @@
                  <a href="https://www.linkedin.com/in/margie-reynolds-6787052" target="_blank"
                  class="hypeColorOrange">LinkedIn profile</a>.</p>
                </p>
-              <p class="compact">This helped prepare me for my next step in my career of
+              <p>This helped prepare me for my next step in my career of
                 working in these areas.</p>
 
-              <p class="compact">When I take on a project for someone, whether it entails
+              <p>When I take on a project for someone, whether it entails
                 designing a website, building a form, or something else, I try to ensure that
                 the finished project is exactly what the customer wanted providing functionality,
                 usability, and being pleasing to the eye.</p>
 
-            </div>
+          </div>
+  </div> <!-- end container for about -->
 
-      </div>
+  <div id="work" class="container-fluid bottom">
+    <div class="container">
 
-      <div id="work">
+          <h2 class="centerMe">Portfolio Work</h2>
+          <div class="row">
+              <div class="col-md-6 darker">
+                    <a href="#applications" class="slide-section">
+                      <h3>Applications</h2>
+                      <p>This area will show the applications I've built using technologies
+                      such as Node.js, Express, React, and other javascript libraries.</p>
+                    </a>
+              </div>
+              <div class="col-md-6 gray">
+                      <a href="#wireframes" class="slide-section">
+                      <h3>City of LA Mobile App</h3>
+                      <p>While working as a Business Analyst for 3Di, Inc., I
+                        created wireframes for a mobile phone inspection application.</p></a>
+              </div>
+              <div class="col-md-6 lighter">
+                      <a href="#ebooks" class="slide-section">
+                      <h3>eBooks</h3>
+                      <p>While working for Disney, I created ebooks from print to display on iPad, Nook,
+                          and Kindle devices. I worked with HTML, CSS, XML, and sound software: Audacity,
+                          and Lipsync.</p></a>
+              </div>
+              <div class="col-md-6 darker">
+                      <a href="#websites" class="slide-section">
+                      <h3>Websites</h3>
+                      <p>While working for DotComm.org (Douglas Omaha Technology Commission), I created
+                      approximately 60 sites using Joomla's Content Management System. These sites were for the City and County
+                    offices. </p></a>
+              </div>
+              <div class="col-md-6 gray">
+                      <a href="#CMS" class="slide-section">
+                      <h3>Content Management</h3>
+                      <p>This area will show the Content Management System (Google platform) pages I created
+                      and worked on while at Avery Dennison Corporation. I helped to convert their IBM intranet
+                      pages to the Google Platform CMS.</p></a>
+              </div>
+              <div class="col-md-6 lighter">
+                      <a href="#graphicDesign" class="slide-section">
+                      <h3>Graphic Design</h3>
+                      <p>While working at Douglas Omaha Technology Commission or Dotcomm.org, I created the headers
+                        for many of the City and County websites for the Omaha, Nebraska City and County departments.
+                        This will display some of them. I gave the customer an average of 2-6 choices.</p></a>
+              </div>
+          </div> <!-- end row -->
 
-        <div class="wrapper" id="work">
-          <h2>Portfolio Work</h2>
+      </div> <!-- end container -->
+    </div> <!-- end container for portfolio -->
 
-          <ul>
-            <li class="article-left lighter">
-            <a href="#applications" class="slide-section">
-              <h4>Applications</h4>
-              <p>This area will show the applications I've built using technologies
-              such as Node.js, Express, React, and other javascript libraries.</p></a>
-            </li>
+    <div  id="applications" class="container-fluid tan">
+      <div class="container">
+          <h2 class="centerMe">Applications</h2>
+          <div class="row">
+              <div class="col-md-6">
+                <h3>The Paddle Game</h3>
+                    <p>This application is a simple paddle game created using HTML5, and JavaScript. One or
+                      two players can play. The first person to five wins the game.</p>
 
-            <li class="article-right darker">
-              <a href="#wireframes" class="slide-section hypeColorWhite">
-              <h4>City of LA Mobile App</h4>
-              <p>While working as a Business Analyst for 3Di, Inc., I created wireframes for a
-                mobile phone inspection application.</p></a>
-            </li>
+                    <p><a href="https://margier.github.io/paddlegame/" class="hypeColorOrange" target="_blank">View the application</a></p>
 
-            <li class="article-left clear darker">
-            <a href="#ebooks" class="slide-section hypeColorWhite">
-              <h4>eBooks</h4>
-              <p>While working for Disney, I created ebooks from print to display on iPad, Nook,
-                  and Kindle devices. I worked with HTML, CSS, XML, and sound software: Audacity,
-                  and Lipsync.</p></a>
-            </li>
+              </div>
+              <div class="col-md-6">
+                    <h3>The Wish List</h3>
+                    <p>The purpose of it is to have all future items someone wants to purchase in one location. This was coded during a one-week
+                      sprint while attending a coding bootcamp.</p>
 
-            <li class="article-right lighter">
-              <a href="#websites" class="slide-section">
-              <h4>Websites</h4>
-              <p>While working for DotComm.org (Douglas Omaha Technology Commission), I created
-              approximately 60 sites using Joomla's Content Management System. These sites were for the City and County
-            offices. </p></a>
-            </li>
+                    <p><a href="https://limitless-tor-47122.herokuapp.com/" class="hypeColorOrange" target="_blank">View the application</a></p>
+              </div>
 
-            <li class="article-left lighter">
-            <a href="#CMS" class="slide-section">
-              <h4>Content Management</h4>
-              <p>This area will show the Content Management System (Google platform) pages I created
-              and worked on while at Avery Dennison Corporation. I helped to convert their IBM intranet
-              pages to the Google Platform CMS.</p></a>
-            </li>
+              <div class="col-md-6">
+                    <h3>Space Quiz</h3>
+                    <p>This is an application that was built using HTML5, CSS3, and Angular. It is just a simple quiz that keeps score of
+                      how many questions are answered correctly.</p>
 
-          </ul>
-        </div>
-      </div>
+                    <p><a href="https://margier.github.io/Space-Quiz/" class="hypeColorOrange" target="_blank">View the application</a></p>
+              </div>
+          </div>
+    </div>
+  </div>
 
-<!--       <div id="portfolio" class="tan"> -->
+  <div class="container-fluid" id="wireframes">
+    <div class="container">
 
-        <div class="wrapper tan" id="applications">
-          <h2>Applications</h2>
-
-          <ul>
-            <li class="article-left">
-              <h4>The Paddle Game</h4>
-              <p>This application is a simple paddle game created using javascript and html5. One or
-                two players can play. The first person to five wins the game.</p>
-
-              <p><a href="https://margier.github.io/paddlegame/" class="hypeColorOrange" target="_blank">View the application</a></p>
-
-                </p>
-            </li>
-
-          <ul>
-            <li class="article-right">
-              <h4>The Wish List</h4>
-              <p>This is my first application. The purpose of it is to have
-                all future items someone wants to purchase in one location. This was coded during a one-week
-                sprint while attending a coding bootcamp.</p>
-
-              <p><a href="https://limitless-tor-47122.herokuapp.com/" class="hypeColorOrange" target="_blank">View the application</a></p>
-
-                </p>
-            </li>
-
-        </div>
-<!--       </div> -->
-
-
-      <!-- <div id="portfolio"> -->
-
-        <div class="wrapper" id="wireframes">
-          <h2>Wireframes</h2>
-          <p class="compact">While working for 3Di, Inc. in downtown LA, I worked on a project using
+          <h2 class="centerMe">Wireframes</h2>
+          <p>While working for 3Di, Inc. in downtown LA, I worked on a project using
           Axure software creating wireframes for the Department of Building and Safety's
           Inspection Bureau.</p>
 
           <p class="compact">Below are the wireframe mobile pages I created.</p>
 
-          <img src="../images/visualScreenflow.jpg" width="90%" height="inherit"/>
-        </div>
- <!--      </div>
- -->
+          <div class="thumbnail">
+            <img src="images/visualScreenflow.jpg"/>
+          </div>
 
-      <!--Start of ebook? -->
-      <div class="darker" id="ebooks">
-        <div class="wrapper">
-          <h2 class="light_title">eBooks</h2>
-          <p class="compactCenter">Here are a few titles I had the opportunity to work.</p>
-          <ul>
-            <li class="col-1">
-                <img src="/images/dbooks/wish.jpg" alt="Wish" class="pic"/>
-                <img src="/images/dbooks/wish.jpg" alt="Wish" class="picbig"/>
-            <li class="col-2">
-              <img src="/images/dbooks/toystory.jpg" alt="Toy Story" class="pic"/>
-              <img src="/images/dbooks/toystory.jpg" alt="Toy Story" class="picbig"/>
-            </li>
-            <li class="col-3">
-              <img src="/images/dbooks/hug.jpg" alt="Do you want a hug?" class="pic"/>
-              <img src="/images/dbooks/hug.jpg" alt="Do you want a hug?" class="picbig"/>
-            </li>
-            <li class="col-1">
-              <img src="/images/dbooks/sofia.jpg" alt="Sofia" class="pic"/>
-              <img src="/images/dbooks/sofia.jpg" alt="Sofia" class="picbig"/>
-            </li>
-            <li class="col-2">
-              <img src="/images/dbooks/incredibles.jpg" alt="Incredibles" class="pic"/>
-              <img src="/images/dbooks/incredibles.jpg" alt="Incredibles" class="picbig"/>
-            </li>
-            <li class="col-3">
-              <img src="/images/dbooks/cars.jpg" alt="Cars" class="pic"/>
-              <img src="/images/dbooks/cars.jpg" alt="Cars" class="picbig"/>
-            </li>
-          </ul>
+    </div>
+  </div>
+
+<!--Start of ebook -->
+      <div class="container-fluid darkerBg" id="ebooks">
+        <div class="container">
+
+          <h2 class="centerMe">eBooks</h2>
+          <p class="centerMe">Disney eBooks</p>
+
+          <div class="row">
+              <div class="col-md-4 thumbnail darker">
+                  <img src="images/dbooks/wish.jpg" alt="Wish" class="pic"/>
+                  <!-- <img src="images/dbooks/wish.jpg" alt="Wish" class="picbig"/> -->
+              </div>
+              <div class="col-md-4 thumbnail darker">
+                  <img src="images/dbooks/toystory.jpg" alt="Toy Story" class="pic"/>
+                  <!-- <img src="images/dbooks/toystory.jpg" alt="Toy Story" class="picbig"/> -->
+              </div>
+              <div class="col-md-4 thumbnail darker">
+                  <img src="images/dbooks/hug.jpg" alt="Do you want a hug?" class="pic"/>
+                  <!-- <img src="images/dbooks/hug.jpg" alt="Do you want a hug?" class="picbig"/> -->
+              </div>
+              <div class="col-md-4 thumbnail darker">
+                  <img src="images/dbooks/sofia.jpg" alt="Sofia" class="pic"/>
+                  <!-- <img src="images/dbooks/sofia.jpg" alt="Sofia" class="picbig"/> -->
+              </div>
+              <div class="col-md-4 thumbnail darker">
+                  <img src="images/dbooks/incredibles.jpg" alt="Incredibles" class="pic"/>
+                  <!-- <img src="images/dbooks/incredibles.jpg" alt="Incredibles" class="picbig"/> -->
+              </div>
+              <div class="col-md-4 thumbnail darker">
+                  <img src="images/dbooks/cars.jpg" alt="Cars" class="pic"/>
+                  <!-- <img src="images/dbooks/cars.jpg" alt="Cars" class="picbig"/> -->
+              </div>
+          </div>
         </div>
+
       </div>
+  </div>
 
-      <!-- end of ebooks -->
+
+<!-- end of ebooks -->
 
 <!-- Websites -->
-<div id="websites">
-
-   <div class="wrapper">
-
-   <h2>Websites</h2>
-   <p class="compactCenter">Here are a few of the sites I created while working for DotComm.org.</p>
+<div id="websites" class="container">
+   <h2 class="centerMe">Websites</h2>
+   <p class="centerMe">Here are a few of the sites I created while working for DotComm.org.</p>
 
           <!-- slicebox -->
       <p id="nav-arrows" class="nav-arrows">
@@ -217,7 +237,6 @@
                     <a href="#"></a>
                   </p>
 
-    <!-- <div class=" gray"> -->
            <ul id="sb-slider" class="sb-slider">
 
              <li>
@@ -327,80 +346,90 @@
       <div id="shadow" class="shadow"></div>
 </div> <!-- end wrapper -->
 
-</div> <!--end of websites -->
 <!-- start of CMS Design -->
-<div class="wrapper darker" id="CMS">
-  <h2 class="light_title">Content Management System(CMS)</h2>
-  <p class="compactCenter">Here are a few of the pages I helped create while
-  working at Avery Dennison for the intranet sites.</p>
-
-  <p class="compactCenter"><img src="../AD/landingpage.jpg" width="50%"/></p>
-  <p class="compactCenter"><img src="../AD/avery_intranet.jpg" height="inherit" /></p>
-  <p class="compactCenter"><img src="../AD/ourworld2.jpg" /></p>
+<div class="container-fluid darkerBg" id="CMS">
+  <div class="container">
+      <h2 class="centerMe">Content Management System(CMS)</h2>
+      <p class="centerMe">Here are a few of the pages I helped create while
+      working at Avery Dennison for the intranet sites.</p>
+      <div class="thumbnail darker">
+        <img src="../AD/landingpage.jpg" alt="landing page"/>
+      </div>
+        <div class="thumbnail darker">
+          <img src="../AD/avery_intranet.jpg" alt="Intranet page"/>
+        </div>
+        <div class="thumbnail darker">
+          <img src="../AD/ourworld2.jpg" alt="Our World page"/>
+      </div>
+  </div>
 </div>
 
 <!-- end of CMS Design -->
 
+<!-- start of Graphic Design -->
+<div class="container-fluid" id="graphicDesign">
+    <h2 class="centerMe">Graphic Design</h2>
+    <p class="centerMe">Graphic Design website headers.</p>
+
+    <div class="row">
+      <div class="col-md-4 thumbnail">
+        <img src="../images/gDesign/gd1.jpg" alt="Header for Planning Department">
+      </div>
+      <div class="col-md-4 thumbnail">
+        <img src="../images/gDesign/gd5.jpg" alt="Header for Master Plan Department ">
+      </div>
+      <div class="col-md-4 thumbnail">
+        <img src="../images/gDesign/gd3.jpg" alt="Header for Public Art Commission ">
+      </div>
+      <div class="col-md-4 thumbnail clear">
+        <img src="../images/gDesign/gd4.jpg" alt="Header for Douglas County Attorney">
+      </div>
+      <div class="col-md-4 thumbnail">
+        <img src="../images/gDesign/gd2.jpg" alt="Header for Landmarks Department">
+      </div>
+      <div class="col-md-4 thumbnail">
+        <img src="../images/gDesign/gd6.jpg" alt="Header for Douglas County Public Defender">
+      </div>
+    </div>
+</div>
+<!-- end of Graphic Design -->
+
 <!-- start of connect -->
-<div class="wrapper tan" id="connect">
- <!-- id="portfolio" -->
-
-          <h2>Connect</h2>
-
-          <ul>
-            <li class="article-left">
+<div class="container-fluid tan" id="connect">
+  <div class="container">
+    <div class="row">
+        <h2 class="centerMe">Connect</h2>
+        <div class="col-md-6">
               <h4>LinkedIn <img src="../images/linkedin.png" alt="LinkedIn logo" title="LinkedIn logo" width="30px"/></h4>
               <p>Visit my <a href="https://www.linkedin.com/in/margie-reynolds-6787052/"  class="hypeColorOrange" target="_blank">
                 LinkedIn profile</a> to learn more about my experience.</p>
-            </li>
-            <li class="article-right">
+       </div>
+        <div class="col-md-6">
               <h4>Twitter <img src="../images/twitter.jpg" alt="Twitter logo" title="Twitter logo" width="30px"/></h4>
               <p>Visit my <a href="https://twitter.com/just4mah" class="hypeColorOrange" target="_blank">Twitter page</a>
                 and follow me if you'd like.</p>
-            </li>
-
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- end of connect -->
-  <div class="wrapper darker" id="contact">
-        <div class="contactPage">
-
-              <h3>Get in touch</h3>
-              <section>
+  <div class="container-fluid darkerBg cushion" id="contact">
+        <div class="container">
+          <div class="row">
+              <h2 class="centerMe">Get in touch</h2>
                 <form class="contact" action="mailto:margie.a.reynolds@gmail.com" method="post">
                 <p class="compactCenter darkFont">Please send me a message if you'd like
                     get in contact.</p>
-                <button class="button" type="submit">Email me</button>
-
-                <!-- <div class="row">
-                  <label class="mailText name_validate">Enter your name: </label>
-                  <input type="text" size="40%"><br />
-                </div>
-                <div class="row">
-                  <label class="mailText">Enter your email: </label>
-                  <input type="email" size="40%"><br />
-                </div>
-
-                <div class="row">
-                  <label class="mailText">Enter Subject: </label>
-                  <input type="text" size="40%"><br />
-                </div>
-                <div class="row">
-                  <label class="mailText textarea">Enter Message: </label>
-                  <textarea id="message" name="message" rows="7" cols="50"></textarea><br />
-                </div> -->
-
-
+                <button type="submit" class="btn btn-default">Email Me</button>
                 </form>
-
-             </section>
-
+         </div>
         </div>
   </div>
   <footer>
 
         <div id="footer-info">
-          <p  class="smallerFont">&#9400 All rights reserved.</p>
+          <p class="smallerFont">&#9400 All rights reserved.</p>
        </div>
        <div id="footer-links">
           <ul>
@@ -413,15 +442,17 @@
        </div>
 
   </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
-      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
+      <script type="text/javascript"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script type="text/javascript" src="js/animate.js"></script>
       <script type="text/javascript" src="js/jquery.js"></script>
-
     <!-- slicebox -->
       <script type="text/javascript" src="js_old/arrows.js"></script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script type="text/javascript" src="js_old/jquery.slicebox.js"></script>
     <!-- end slidebox-->
+
 </body>
 </html>

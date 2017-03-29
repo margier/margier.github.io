@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-  var headerHeight = $('header').outerHeight();
+  var headerHeight = $('nav').outerHeight();
   // console.log(headerHeight);
 
 
@@ -14,9 +14,12 @@ $(document).ready(function() {
     }, 1000);
     e.preventDefault();
     // console.log(linkHref);
-});
+    });
 
-
-
+    // this code makes the hamburger menu close when option clicked
+    $('.navbar-nav > li > a').on('click', function() {
+        $('.navbar-toggle').trigger('click');
+      });
+      
 
 });
