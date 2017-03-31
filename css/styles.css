@@ -302,35 +302,23 @@ a.thumbnail.active {
 @media screen and (max-width:500px) {
 
 .box {
-      /* margin: 2% 10% 2% 10%; */
-      padding: 1%;
-      /* padding-right: 10%; */
-      background-color: #ffffff;
-      border: 1px solid black;
-      border-radius: 7px;
-      opacity: 0.5;
-      font-weight: bold;
-      color: #000000;
-      margin: 0 auto;
-      margin-top: 2%;
-  }
-
-bootstrap.css:1958
-.h3 {
-  font-size:15px;
-}
-.box {
     margin: 2% 10% 2% 10%;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #ffffff;
     border: 1px solid black;
     border-radius: 7px;
-    opacity: 0.5;
+    opacity: 0.8;
     font-weight: bold;
     color: #000000;
     margin-top: 15%;
 }
+
+bootstrap.css:1958
+.h3 {
+  font-size:15px;
+}
+
 .col-md-6 {
     font-size: 14px;
     width: 90%;
